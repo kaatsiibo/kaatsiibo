@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lobster;
+}
+
+body {
+    font-family: lo;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+
+
+
+/*Inicio de menu*/
+.navbar {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(151, 127, 53);
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    transition: 0.2s linear;
+}
+
+.nav-link:hover {
+    color: rgb(151, 127, 53);
+}
+
+/*Despliegue de menu*/
+.dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-item {
+    color: white;
+    transition: 0.2s linear;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(151, 127, 53);
+}
+
+/*
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+*/
+
+.titulo-dorado{
+    color: rgb(151, 127, 53);
+}
+
+.linea-horizontal{
+    background-color:rgb(151, 127, 53);
+    height: 5px;
+    width: 195px;
+
+}
+
+/*Fin despliegue de menu*/
+
+
+
+.cover {
+    height: 400px;
+    background-image: url(Imgenes/fondo.jpeg);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.cover-small {
+    height: 200px;
+    background-blend-mode: normal;
+}
+
+.card {
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.6);
+}
+
+.card:hover {
+   transform: translateY(-3%);
+   transition: 0.5s;
+}
+
+.card-title {
+    min-height: 3rem;
+    text-align: center;
+}
+
+.card-text {
+    min-height: 11rem;
+    text-align: justify;
+}
+
+.responsive-iframe {
+    position: relative;
+    padding-top: 56.26%;
+}
+
+.responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*Objetivos*/
+.objetivos{
+    text-align: center;
+}
+
+.columnas{
+    align-items: center;
+}
+
+/*Fin de objetivos*/
+
+
+
+
+/*Slider de imagenes*/
+.slider {
+    overflow-x: scroll;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.slider {
+    overflow-x: hidden;
+}
+
+.slider-container {
+    display: flex;
+    transform: translateX(0);
+    animation: slider 15s infinite;
+}
+
+.image-container {
+    width: 100%;
+    padding-top: 45%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    95% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Footer*/
+footer {
+    background-color: black;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    margin: 10px auto;
+    line-height: 28px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials ul{
+    list-style: none;
+}
+
+.socials ul li{
+width: 40px;
+height: 40px;
+line-height: 35px;
+margin: 0 10px;
+text-align: center;
+cursor: pointer;
+border-radius: 50%;
+border: 2px solid white;
+float: left;
+transition: all 0.5s ease;
+}
+
+/*Estylos a boton*/
+.socials ul li .fa{
+color: white;
+transition: all 0.5s ease;
+font-size: 20px;
+margin-bottom: 30px;
+}
+
+/*Color de icono y borde de facebook*/
+.socials ul li.facebook{
+    border: 5px solid #3b5998;
+    transition: all 0.5s ease;
+}
+
+.socials ul li .fa-facebook{
+    color: #3b5998;
+    transition: all 0.5s ease;
+}
+
+/*Color de icono y borde de instagram*/
+.socials ul li.instagram{
+    border: 5px solid #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+.socials ul li .fa-instagram{
+    color: #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+/*Color de icono y borde de linkedin*/
+.socials ul li.linkedin{
+    border: 5px solid #0e76a8 ;
+    transition: all 0.5s ease;
+}
+
+.socials ul li .fa-linkedin{
+    color: #0e76a8 ;
+    transition: all 0.5s ease;
+}
+/*
+.socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+}
+
+.socials a li {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: rgb(151, 127, 53);
+}
+*/
+.footer-botton {
+    background-color: black;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-botton a {
+    color: white;
+    font-size: 14px;
+    word-spacing: 2px;
+    list-style: none;
+}
+
+.bi {
+    font-size: 19px;
+    margin-right: 10px;
+    color: rgb(151, 127, 53);
+}
+
+
+
+/*Estilos a formulario de contacto*/
+
+
+
+
+
+/*Fin de estilos a formulario de contacto*/
