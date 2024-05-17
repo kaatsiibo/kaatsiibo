@@ -77,8 +77,6 @@ body {
 
 /*Fin despliegue de menu*/
 
-
-
 .cover {
     height: 400px;
     background-image: url(Imgenes/fondo.jpeg);
@@ -137,8 +135,12 @@ body {
 
 /*Fin de objetivos*/
 
-
-
+/*Resposive de las pantallas para telefono*/
+@media screen and (max-width:700px){
+    iframe{
+        padding-bottom: 200px;
+    }
+}
 
 /*Slider de imagenes*/
 .slider {
@@ -165,43 +167,6 @@ body {
     flex-shrink: 0;
 }
 
-@keyframes slider {
-    0% {
-        transform: translateX(0);
-    }
-
-    20% {
-        transform: translateX(0);
-    }
-
-    25% {
-        transform: translateX(-100%);
-    }
-
-    45% {
-        transform: translateX(-100%);
-    }
-
-    50% {
-        transform: translateX(-200%);
-    }
-
-    70% {
-        transform: translateX(-200%);
-    }
-
-    75% {
-        transform: translateX(-300%);
-    }
-
-    95% {
-        transform: translateX(-300%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
 
 /* Footer*/
 footer {
@@ -286,16 +251,6 @@ margin-bottom: 30px;
     transition: all 0.5s ease;
 }
 
-/*Color de icono y borde de linkedin*/
-.socials ul li.linkedin{
-    border: 5px solid #0e76a8 ;
-    transition: all 0.5s ease;
-}
-
-.socials ul li .fa-linkedin{
-    color: #0e76a8 ;
-    transition: all 0.5s ease;
-}
 /*
 .socials {
     list-style: none;
